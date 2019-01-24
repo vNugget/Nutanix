@@ -19,13 +19,12 @@ def jsonScan(jsonLoad, target,found):
         else:
             if isinstance(value, dict):
                 jsonScan(value,target,found)
-                #continue
+                
 
 
 if __name__ == "__main__":
     found = []
     with open('document.json', 'r') as f:
         json_dict = json.load(f)
-        #print(distros_dict['entities'][0]['vm_disk_info'][2]['disk_address']['vmdisk_uuid'])
         jsonScan(json_dict, 'vmdisk_uuid', found)
         print(found)
