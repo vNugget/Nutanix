@@ -2,7 +2,6 @@
 
 import requests
 import urllib3
-import json
 import ApiTools
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 ####change this according to your env####
