@@ -43,6 +43,6 @@ data = {
   ]
 }
 #print(data)
-#result = mySession.post(pcBaseURL + "/api/nutanix/v0.8/vms/"+dstVMUuid+"/disks/",json=data,headers=headers,auth=(pcLogin, pcPasswd),verify=False)
-#print(result.text)
+result = mySession.post(pcBaseURL + "/api/nutanix/v0.8/vms/"+dstVMUuid+"/disks/",json=data,headers=headers,auth=(pcLogin, pcPasswd),verify=False)
+print(result.text)
 
