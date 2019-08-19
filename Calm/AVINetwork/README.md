@@ -1,2 +1,2 @@
 
-Calm ready script to interact with Avi Network controller.
+Calm ready scripts to interact with Avi Network controller.
